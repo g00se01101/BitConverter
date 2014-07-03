@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BitConverter</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <meta name="description" content="Bit to Bitcoin Conversion"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "/assets/stylesheets/bootstrap-theme.css"  %>
+  <%= stylesheet_link_tag "/assets/stylesheets/bootstrap-theme.min.css"  %>
+  <%= stylesheet_link_tag "/assets/stylesheets/bootstrap.css" %>
+  <%= stylesheet_link_tag "/assets/stylesheets/bootstrap.min.css"  %>
+
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag '/assets/javascript/bootstrap.js'%>
+  <%= javascript_include_tag '/assets/javascript/bootstrap.min.js' %>
+  <%= javascript_include_tag '/assets/javascript/calculations.js' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- NAVIGATION BAR START -->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index">BitConverter</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="about">About</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- NAVIGATION BAR END -->
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h3>This site allows you to:</h3>
+    <ul>
+  		<li>Quickly convert bits to BTC and BTC into bits.</li>
+		<ul>
+  			<li>843000 bits =  0.843 BTC </li>
+  			<li>1 BTC = 1,000,000 bits </li>
+		</ul>
+	</ul>
+	<h3>What is Bitcoin:</h3>
+    <ul>
+    	<li>Bitcoin is a revolutionary digital currency. You can use Bitcoin to send money to anyone via the Internet with no middleman and extremely low fees. Learn more <a href="http://www.bitcoin.org/">here</a>.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+	<footer>
+		<p class ="text-center"> Donations: 13STLYc5sGsJRKAyiHczceizbStNnB6z4E </p>
+	</footer>
+</div>
+</body>
+</html>

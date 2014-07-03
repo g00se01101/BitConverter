@@ -1,0 +1,46 @@
+
+<div class="alert alert-warning alert-dismissible" id="alertBoxWarning" style="display:none" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong> Both fields are filled, please leave one field empty!
+</div>
+<div class="alert alert-danger alert-dismissible" id="alertBoxNotNumeric" style="display:none" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong> You must enter a valid number!
+</div>
+<div class="alert alert-danger alert-dismissible" id="alertBoxNull" style="display:none" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong> You must enter a value into one of the fields below!
+</div>
+<div class="jumbotron">
+<p class="text-center"><font size="6"><b>bits to BTC Converter</b></font></p>
+  <p class="text-center"><font size="3"><i>Quickly convert bits to BTC!</i></font></p>
+	<div class="row">	
+		<div class="col-xs-6 col-sm-6">
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon">bits</span>
+			  <input type="text" id="txtBit" class="form-control" onkeypress="removeBTC()" >
+			</div>
+		</div>
+	
+		<div class="col-xs-6 col-sm-6">
+			<div class="input-group input-group-lg">
+					  <span class="input-group-addon">BTC</span>
+					  <input type="text" id="txtBTC" class="form-control" onkeypress="removeBits()">
+			</div>
+		</div>
+	</div>
+	</br>
+	<div class="row">
+  		<div class="col-xs-2 col-sm-3 col-md-4">
+  		</div>
+  		<div class="col-xs-8 col-sm-6 col-md-4">
+			<button type="button" onclick="funcConv()" class="btn btn-warning btn-block">Convert</button>
+		</div>
+		<div class="col-xs-2 col-sm-3 col-md-4">
+  		</div>
+	</div>
+</div>
+
+<footer>
+<p class ="text-center"> Donations: 13STLYc5sGsJRKAyiHczceizbStNnB6z4E </p>
+</footer>
